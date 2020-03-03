@@ -139,6 +139,11 @@ a.img1,
   content: "...";
 }
 .food-and-drink-list {
+  padding: 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   overflow: hidden;
   margin-bottom: 6rem;
   padding-left: 3rem;
@@ -161,7 +166,9 @@ a.img1,
   padding-left: 1.8rem;
   padding-right: 2.8rem;
 }
-
+.food-and-drink-item p {
+  white-space: pre;
+}
 .food-and-drink-item span {
   color: #2c3643;
   font-size: 1.25em;
@@ -201,6 +208,7 @@ a.img1,
   #Tokyo,
   #Beijing,
   #NewYork {
+    min-height: 400px;
     width: 90%;
     margin: auto;
   }
