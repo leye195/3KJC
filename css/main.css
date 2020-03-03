@@ -34,7 +34,7 @@ li a {
 }
 .bg img {
   opacity: 0.5;
-  width: 50%;
+  width: 80%;
 }
 .title {
   padding-top: 20px;
@@ -215,10 +215,75 @@ a.img1,
   .bg {
     width: 100%;
   }
+  .food-and-drink-list {
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin-bottom: 6rem;
+    padding-left: 3rem;
+    font-weight: 500;
+  }
+  .food-and-drink-item {
+    margin-left: 0 !important;
+  }
+  .food-and-drink-item p {
+    white-space: normal !important;
+    font-size: 0.5rem;
+  }
+  .food-and-drink-item span {
+    color: #2c3643;
+    font-size: 1em;
+  }
+  .w3-jumbo {
+    font-size: 50px !important;
+  }
+  .w3-jumbo p {
+    margin-top: 0;
+  }
+  .disc {
+    font-size: 0.6rem;
+  }
 }
 @media only screen and (max-resolution: 150dpi) and (max-width: 480px) {
+  .food-and-drink-list {
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin-bottom: 6rem;
+    padding-left: 3rem;
+    font-weight: 500;
+  }
+  .food-and-drink-item {
+    margin-left: 0 !important;
+  }
+  .food-and-drink-item span {
+    color: #2c3643;
+    font-size: 1em;
+  }
+  #Seoul,
+  #Tokyo,
+  #Beijing,
+  #NewYork {
+    min-height: 300px;
+    width: 90%;
+    margin: auto;
+  }
+  .w3-jumbo {
+    font-size: 50px !important;
+  }
+  .w3-jumbo p {
+    margin-top: 0;
+  }
   .disc {
-    font-size: 20px;
+    font-size: 0.6rem;
   }
   .theme {
     font-size: 35px;
