@@ -5,7 +5,10 @@
 ### 사용 스택
 
 - html, css, vanilaJS
-  <ul style="display:flex; flex-direction:row; align-items:center; justify-content:center;">
+
+<ul style="display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;">
   <li>
     <img width="212" alt="스크린샷 2020-03-03 오후 6 26 30" src="https://user-images.githubusercontent.com/30601503/75761563-a263d180-5d7c-11ea-9380-14f69304f084.png">
   </li>
