@@ -4,7 +4,7 @@
 
 ### 사용 스택
 
-- html, css, vanilaJS
+HTML, CSS, JavaScript
 
 <ul style="display: flex !important;
     align-items: center !important;
