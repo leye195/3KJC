@@ -1,81 +1,109 @@
 * {
   scroll-behavior: smooth;
-}
-body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 li {
   list-style-type: none;
 }
+
 li a {
   text-decoration: none;
 }
+
 .trip-size {
   font-size: 5rem;
 }
+
 h5 {
   font-size: 0.8rem;
 }
+
 .disc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   min-width: 200px;
-  min-height: 400px;
-  margin-top: 4em;
-  margin-bottom: 1em;
-}
-.disc q {
+  min-height: 200px;
+  margin: 4rem 0;
   white-space: pre-line;
   word-break: break-all;
-  word-wrap: break-word;
+  text-align: start !important;
 }
+
 .m-bg {
   margin-bottom: 0px;
 }
+
 .bg {
   margin-bottom: 150px;
 }
+
 .bg img {
   opacity: 0.5;
   width: 80%;
 }
+
 .title {
   padding-top: 20px;
 }
+
 .title span {
   margin-left: 8px;
   margin-right: 8px;
   font-family: monospace;
 }
+
 .city_list {
-  border: 2px solid black;
   background-color: black;
   text-align: center;
   margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.city_list.fixed {
+  position: fixed;
+  top: 1px;
+  width: 100%;
+  background-color: transparent;
+  z-index: 1;
+  filter: drop-shadow(2px 4px 6px black);
+  transition: all 0.5s ease-out;
+}
+
 .city_list li {
   background-color: white;
-  padding-top: 2px;
-  padding-bottom: 2px;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
 }
+
 #menu {
   font-size: 1.25em;
   font-family: sans-serif;
   padding: 10px;
   box-shadow: 1px 1px 1px 1px;
 }
+
 #menu a {
   margin-left: 3px;
   margin-right: 3px;
   text-decoration: none;
 }
+
 #menu a:hover {
   border-bottom: 2px solid white;
   transition: all 0.2s;
 }
+
 .cur {
   border-bottom: 2px solid white;
 }
+
 #Seoul,
 #Tokyo,
 #NewYork,
@@ -86,27 +114,32 @@ h5 {
   min-height: 600px;
   max-width: 100%;
 }
+
 #Seoul,
 #Tokyo,
 #Beijing,
 #NewYork h2 {
   text-shadow: -4px 0px 20px;
 }
+
 #Seoul {
   background-image: url("../img/gyeongbok-palace.jpg");
 }
+
 #Tokyo {
   background-image: url("../img/tokyo.jpg");
 }
+
 #Beijing {
   background-image: url("../img/beijing.jpg");
 }
+
 #NewYork {
   background-image: url("../img/nyc-statue-of-liberty.jpg");
 }
+
 .w3-display-middle {
   position: absolute;
-  /* left: 0; */
   bottom: 0;
   width: 100%;
   height: 100%;
@@ -116,9 +149,11 @@ h5 {
   align-items: center;
   justify-content: center;
 }
+
 .se {
   top: 100px;
 }
+
 .attr-img1,
 .attr-img2,
 .attr-img3 {
@@ -126,21 +161,26 @@ h5 {
   height: 210px;
   padding: 10px;
 }
+
 a.img1,
 .img2,
 .img3 {
   text-decoration: none;
 }
+
 .card:hover {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
+
 .more {
   direction: rtl;
 }
+
 .more::before {
   content: "...";
 }
+
 .food-and-drink-list {
   padding: 0 !important;
   display: flex;
@@ -152,39 +192,45 @@ a.img1,
   padding-left: 3rem;
   font-weight: 500;
 }
+
 .food-and-drink-item {
   float: left;
   margin: 5px;
   border-bottom: 0.1rem solid #f1f4fb;
   width: calc(50% - 3rem);
 }
+
 .food-and-drink-item a {
   display: block;
   padding-bottom: 1.8rem;
   padding-top: 2.1rem;
 }
+
 .food-and-drink-item a:hover {
   transition: 0.5s;
   display: block;
   padding-left: 1.8rem;
   padding-right: 2.8rem;
 }
+
 .food-and-drink-item p {
   white-space: pre;
 }
+
 .food-and-drink-item span {
   color: #2c3643;
   font-size: 1.25em;
 }
-.food-and-drink-item:first-child {
-  border-top: 0.1rem solid #f1f4fb;
-}
+
+.food-and-drink-item:first-child,
 .food-and-drink-item:nth-child(2) {
   border-top: 0.1rem solid #f1f4fb;
 }
+
 .food-and-drink-item:nth-child(2n) {
   margin-left: 3rem;
 }
+
 .floating-button {
   position: fixed;
   right: 0;
@@ -203,13 +249,16 @@ a.img1,
   transform: translate(-10px, -10px);
   box-shadow: 0px 1px 4px 1px #e3e3e3;
 }
+
 .floating-button a {
   text-decoration: none;
 }
+
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   h5 {
     font-size: 0.6rem !important;
   }
+
   #Seoul,
   #Tokyo,
   #Beijing,
@@ -218,9 +267,11 @@ a.img1,
     width: 90%;
     margin: auto;
   }
+
   .bg {
     width: 100%;
   }
+
   .food-and-drink-list {
     padding: 0 !important;
     display: flex;
@@ -233,31 +284,39 @@ a.img1,
     padding-left: 3rem;
     font-weight: 500;
   }
+
   .food-and-drink-item {
     margin-left: 0 !important;
   }
+
   .food-and-drink-item p {
     white-space: normal !important;
     font-size: 0.5rem;
   }
+
   .food-and-drink-item span {
     color: #2c3643;
     font-size: 1em;
   }
+
   .w3-jumbo {
     font-size: 50px !important;
   }
+
   .w3-jumbo p {
     margin-top: 0;
   }
+
   .disc {
     font-size: 0.6rem;
   }
 }
+
 @media only screen and (max-resolution: 150dpi) and (max-width: 480px) {
   h5 {
     font-size: 0.6rem !important;
   }
+
   .food-and-drink-list {
     padding: 0 !important;
     display: flex;
@@ -270,13 +329,16 @@ a.img1,
     padding-left: 3rem;
     font-weight: 500;
   }
+
   .food-and-drink-item {
     margin-left: 0 !important;
   }
+
   .food-and-drink-item span {
     color: #2c3643;
     font-size: 1em;
   }
+
   #Seoul,
   #Tokyo,
   #Beijing,
@@ -285,18 +347,23 @@ a.img1,
     width: 90%;
     margin: auto;
   }
+
   .w3-jumbo {
     font-size: 50px !important;
   }
+
   .w3-jumbo p {
     margin-top: 0;
   }
+
   .disc {
     font-size: 0.6rem;
   }
+
   .theme {
     font-size: 35px;
   }
+
   .more {
     font-size: 6px;
   }

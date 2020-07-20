@@ -1,6 +1,7 @@
 (() => {
-  const menulist = document.querySelector("#menu");
-  const handleMenuClick = e => {
+  const menulist = document.querySelector("#menu"),
+    cityList = document.querySelector(".city_list");
+  const handleMenuClick = (e) => {
     const { target } = e;
     const childs = menulist.children;
     if (target.classList.contains("home")) {
@@ -15,11 +16,20 @@
     }
     target.classList.add("cur");
   };
-  const handleScroll = e => {
+  const handleScroll = (e) => {
+    const pageOffY = window.pageYOffset;
     const bg = document.querySelectorAll(".bg img");
     const se = bg[0],
       to = bg[1],
       be = bg[2];
+    console.log(pageOffY, cityList.getBoundingClientRect().y);
+    if (pageOffY < 135) {
+      cityList.classList.remove("fixed");
+    } else {
+      if (!cityList.classList.contains("fixed")) {
+        cityList.classList.add("fixed");
+      }
+    }
     if (se.getBoundingClientRect().top <= 700) {
       if (!se.classList.contains("show-up")) se.classList.add("show-bg");
     } else {
